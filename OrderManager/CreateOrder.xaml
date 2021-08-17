@@ -1,0 +1,130 @@
+﻿<Window x:Class=" OrderManager.CreateOrder"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="local: OrderManager"
+        mc:Ignorable="d"
+        Title="Створити замовлення" Height="375.645" Width="530">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="293*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="0">
+            <Grid Margin="0,2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Column="0" Content="Виберіть прилад:" />
+                <ComboBox Grid.Column="1" Name="deviceComboBox" Width="120" Height="20" HorizontalAlignment="Left"></ComboBox>
+            </Grid>
+            <Grid Margin="0,2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Column="0" Content="Виберіть статус замов-ня:" FontSize="10" />
+                <ComboBox Grid.Column="1"  Name="statusComboBox" Width="120" Height="20" HorizontalAlignment="Left" FontSize="9px" />
+
+            </Grid>
+            <Grid Margin="0,2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Column="0" Content="Дата замовлення:" />
+                <DatePicker Name="dateOrder" Grid.Column="1" Width="120"  Height="25" HorizontalAlignment="Left" ></DatePicker>
+
+
+
+            </Grid>
+            <Grid Margin="0,2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Column="0" Content="Тип замовлення:" />
+                <ComboBox Name="typeOrderComboBox" Grid.Column="1" Width="120" Height="20" HorizontalAlignment="Left"></ComboBox>
+
+            </Grid>
+            <Grid Margin="0,2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Column="0" Content="Майстер:" />
+                <ComboBox Name="workmanComboBox" Grid.Column="1" Width="120" Height="20" HorizontalAlignment="Left"></ComboBox>
+
+            </Grid>
+            <Grid Margin="0,2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Column="0" Content="Загальна сума:" />
+                <TextBox Name="priceTextBox" Grid.Column="1" Width="120" Height="20" HorizontalAlignment="Left"></TextBox>
+
+            </Grid>
+            <GroupBox Header="Клієнт" BorderBrush="Black" BorderThickness="1.5">
+                <StackPanel>
+                    <CheckBox Name="isNewClient" Content="Новий клієнт" Margin="0,4,5,6" HorizontalAlignment="Right" Click="CheckBox_Checked"  ></CheckBox>
+                    <Grid x:Name="searchGrid" Margin="0,2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <Label  Grid.Column="0" Grid.Row="0" VerticalAlignment="Center" FontSize="10" Content="Пошук по номеру тел.:"></Label>
+                        <TextBox Name="searchTextBox" Grid.Row="0" Grid.Column="1" FontSize="10" VerticalAlignment="Center"></TextBox>
+                        <Button Name="searchClient" Grid.Row="1" Grid.Column="1" Content="Пошук" Margin="0 5 0 3" Click="searchClient_Click"></Button>
+                        <Button Name="addClient" Grid.Row="2" Grid.Column="1" Content="Додати клієнта" Click="addClient_Click"></Button>
+                    </Grid>
+                    
+                </StackPanel>
+            </GroupBox>
+        </StackPanel>
+        <GroupBox Grid.Column="1" Header="Опис" BorderBrush="Black" BorderThickness="1.5">
+            <TextBox Name="descriptionTextBox" UndoLimit="500"></TextBox>
+        </GroupBox>
+        <Button Name="createOrder" Grid.Row="2" Grid.ColumnSpan="2" Content="Створити" Width="100" Height="25" Click="createOrder_Click"/>
+
+    </Grid>
+</Window>

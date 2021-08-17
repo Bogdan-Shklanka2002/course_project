@@ -1,0 +1,94 @@
+﻿<Window x:Class="DirectorApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DirectorApp"
+        mc:Ignorable="d"
+        Title="Адміністратор" Height="450" Width="800">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0">
+            <MenuItem Header="Замовлення">
+                <MenuItem Name="createOrderMenuItem" Header="Створити замовлення" Click="createOrderMenuItem_Click"></MenuItem>
+                <MenuItem Name="updateOrderMenuItem" Header="Редагувати замовлення" Click="updateOrderMenuItem_Click"></MenuItem>
+                <MenuItem Name="deleteOrderMenuItem" Header="Видалити замовлення" Click="deleteOrderMenuItem_Click"></MenuItem>
+                <!--<MenuItem Header="Make reports">
+                    <MenuItem Name="reportByClients" Header="By clients" Click="reportByClients_Click"></MenuItem>
+                    <MenuItem Name="reportByEmployees" Header="By employees" Click="reportByEmployees_Click"></MenuItem>
+                    <MenuItem Name="reportByDetails" Header="By details" Click="reportByDetails_Click"></MenuItem>
+                    <MenuItem Name="reportByDevices" Header="By devices" Click="reportByDevices_Click"></MenuItem>
+                </MenuItem>-->
+            </MenuItem>
+            <MenuItem Header="Клієнт">
+                <MenuItem Name="createClient" Header="Добавити клієнта" Click="createClient_Click"></MenuItem>
+                <MenuItem Name="updateClient" Header="Редагувати клієнта" Click="updateClient_Click"></MenuItem>
+                <MenuItem Name="deleteClient" Header="Видалити клієнта" Click="deleteClient_Click"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Працівник">
+                <MenuItem Name="addEmployee" Header="Добавити працівника" Click="addEmployee_Click"></MenuItem>
+                <MenuItem Name="updateEmployee" Header="Редагувати працівника" Click="updateEmployee_Click"></MenuItem>
+                <MenuItem Name="deleteEmployee" Header="Видалити працівника" Click="deleteEmployee_Click"></MenuItem>
+                <!--<MenuItem Header="Make reports">
+                    <MenuItem Header="By orders"></MenuItem>
+                </MenuItem>-->
+            </MenuItem>
+            <MenuItem Header="Деталь">
+                <MenuItem Name="addDetail" Header="Добавити деталь" Click="addDetail_Click"></MenuItem>
+                <MenuItem Name="updateDetail" Header="Редагувати деталь" Click="updateDetail_Click"></MenuItem>
+                <MenuItem Name="deleteDetail" Header="Видалити деталь" Click="deleteDetail_Click"></MenuItem>
+                <!--<MenuItem Header="Make reports">
+                    <MenuItem Header="By orders"></MenuItem>
+                    <MenuItem Header="By type"></MenuItem>
+                    <MenuItem Header="By avaible"></MenuItem>
+                </MenuItem>-->
+            </MenuItem>
+            <MenuItem Header="Пристрій" Click="MenuItem_Click">
+                <MenuItem Name="addDevice" Header="Добавити пристрій" Click="addDevice_Click"></MenuItem>
+                <MenuItem Name="updateDevice" Header="Редагувати пристрій" Click="updateDevice_Click"></MenuItem>
+                <MenuItem Name="deleteDevice" Header="Видалити пристрій" Click="deleteDevice_Click"></MenuItem>
+                <!--<MenuItem Header="Make reports">
+                    <MenuItem Header="By orders"></MenuItem>
+                    <MenuItem Header="By type"></MenuItem>
+                </MenuItem>-->
+            </MenuItem>
+            <MenuItem Name="refresh" Header="Оновити таблиці" Click="refresh_Click"></MenuItem>
+        </Menu>
+
+        <TabControl Grid.Row="1">
+            <TabItem Header="Замовлення">
+                <DockPanel  LastChildFill="True">
+                    <DataGrid Name="ordersGrid"></DataGrid>
+                </DockPanel>
+            </TabItem>
+            <TabItem Header="Клієнти">
+                <DockPanel  LastChildFill="True">
+                    <DataGrid Name="clientsGrid"></DataGrid>
+                </DockPanel>
+            </TabItem>
+            <TabItem Header="Працівники">
+                <DockPanel  LastChildFill="True">
+                    <DataGrid Name="employeesGrid"></DataGrid>
+                </DockPanel>
+            </TabItem>
+            <TabItem Header="Деталі">
+                <DockPanel  LastChildFill="True">
+                    <DataGrid Name="detailsGrid"></DataGrid>
+                </DockPanel>
+            </TabItem>
+            <TabItem Header="Пристрої">
+                <DockPanel  LastChildFill="True">
+                    <DataGrid Name="devicesGrid"></DataGrid>
+                </DockPanel>
+            </TabItem>
+        </TabControl>
+
+
+
+
+    </Grid>
+</Window>

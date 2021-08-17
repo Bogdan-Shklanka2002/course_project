@@ -1,0 +1,30 @@
+﻿<Window x:Class="WorkmanApp.SearchDetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorkmanApp"
+        mc:Ignorable="d"
+        Title="Пошук деталей" Height="333.768" Width="452.37">
+    <DockPanel LastChildFill="True">
+        <GroupBox DockPanel.Dock="Top" Header="Пошук деталей по ІД замовлення" BorderBrush="Black" BorderThickness="1.5">
+
+            <Grid x:Name="searchOrderGrid" Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+
+                </Grid.RowDefinitions>
+
+                <TextBox Name="searchTextBox" Grid.Row="0" Grid.ColumnSpan="2" FontSize="10" VerticalAlignment="Center" VerticalContentAlignment="Center" 
+                         Width="250" Height="20" Margin="0,5,0,0"></TextBox>
+                <Button Name="searchButton" Grid.Row="2" Grid.ColumnSpan="2"  Content="Пошук" Width="100" Height="20" Margin="0,5,0,0" Click="searchButton_Click"></Button>
+            </Grid>
+        </GroupBox>
+        <DataGrid Name="detailsGrid" ></DataGrid>
+    </DockPanel>
+</Window>

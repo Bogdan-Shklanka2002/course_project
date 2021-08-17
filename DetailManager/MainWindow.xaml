@@ -1,0 +1,56 @@
+﻿<Window x:Class="DetailManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DetailManager"
+        mc:Ignorable="d"
+        Title="Менеджер по деталях" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0">
+            
+           
+            
+            <MenuItem Header="Деталь">
+                <MenuItem Name="addDetail" Header="Добавити деталь" Click="addDetail_Click"></MenuItem>
+                <MenuItem Name="updateDetail" Header="Редагувати деталь" Click="updateDetail_Click"></MenuItem>
+                <MenuItem Name="deleteDetail" Header="Видалити деталь" Click="deleteDetail_Click"></MenuItem>
+               
+            </MenuItem>
+            <MenuItem Header="Пристрій">
+                <MenuItem Name="addDevice" Header="Добавити пристрій" Click="addDevice_Click"></MenuItem>
+                <MenuItem Name="updateDevice" Header="Редагувати пристрій" Click="updateDevice_Click"></MenuItem>
+               
+            </MenuItem>
+            <MenuItem Name="refresh" Header="Оновити таблиці" Click="refresh_Click"></MenuItem>
+        </Menu>
+
+        <TabControl Grid.Row="1">
+            <TabItem Header="Замовлення">
+                <DockPanel  LastChildFill="True">
+                    <DataGrid Name="ordersGrid"></DataGrid>
+                </DockPanel>
+            </TabItem>
+           
+            
+            <TabItem Header="Деталі">
+                <DockPanel  LastChildFill="True">
+                    <DataGrid Name="detailsGrid"></DataGrid>
+                </DockPanel>
+            </TabItem>
+            <TabItem Header="Прилади">
+                <DockPanel  LastChildFill="True">
+                    <DataGrid Name="devicesGrid"></DataGrid>
+                </DockPanel>
+            </TabItem>
+        </TabControl>
+
+
+
+
+    </Grid>
+</Window>

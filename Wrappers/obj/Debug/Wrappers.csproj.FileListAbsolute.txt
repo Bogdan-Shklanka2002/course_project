@@ -1,0 +1,15 @@
+B:\C++ проекти\Курсова робота\Course_Practice\Wrappers\obj\Debug\Wrappers.csproj.CoreCompileInputs.cache
+B:\C++ проекти\Курсова робота\Course_Practice\Wrappers\obj\Debug\Wrappers.csprojAssemblyReference.cache
+B:\C++ проекти\Курсова робота\Course_Practice\Wrappers\bin\Debug\Wrappers.dll
+B:\C++ проекти\Курсова робота\Course_Practice\Wrappers\bin\Debug\Wrappers.pdb
+B:\C++ проекти\Курсова робота\Course_Practice\Wrappers\bin\Debug\DAL_ComputerRepair.dll
+B:\C++ проекти\Курсова робота\Course_Practice\Wrappers\bin\Debug\Repository.dll
+B:\C++ проекти\Курсова робота\Course_Practice\Wrappers\bin\Debug\EntityFramework.dll
+B:\C++ проекти\Курсова робота\Course_Practice\Wrappers\bin\Debug\DAL_ComputerRepair.pdb
+B:\C++ проекти\Курсова робота\Course_Practice\Wrappers\bin\Debug\DAL_ComputerRepair.dll.config
+B:\C++ проекти\Курсова робота\Course_Practice\Wrappers\bin\Debug\Repository.dll.config
+B:\C++ проекти\Курсова робота\Course_Practice\Wrappers\bin\Debug\EntityFramework.xml
+B:\C++ проекти\Курсова робота\Course_Practice\Wrappers\obj\Debug\Wrappers.csproj.CopyComplete
+B:\C++ проекти\Курсова робота\Course_Practice\Wrappers\obj\Debug\Wrappers.dll
+B:\C++ проекти\Курсова робота\Course_Practice\Wrappers\obj\Debug\Wrappers.pdb
+B:\C++ проекти\Курсова робота\Course_Practice\Wrappers\bin\Debug\Repository.pdb

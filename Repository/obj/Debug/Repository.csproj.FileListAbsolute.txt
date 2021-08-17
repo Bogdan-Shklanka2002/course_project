@@ -1,0 +1,11 @@
+B:\C++ проекти\Курсова робота\Course_Practice\Repository\bin\Debug\Repository.dll.config
+B:\C++ проекти\Курсова робота\Course_Practice\Repository\bin\Debug\Repository.dll
+B:\C++ проекти\Курсова робота\Course_Practice\Repository\bin\Debug\Repository.pdb
+B:\C++ проекти\Курсова робота\Course_Practice\Repository\bin\Debug\EntityFramework.dll
+B:\C++ проекти\Курсова робота\Course_Practice\Repository\bin\Debug\EntityFramework.SqlServer.dll
+B:\C++ проекти\Курсова робота\Course_Practice\Repository\bin\Debug\EntityFramework.xml
+B:\C++ проекти\Курсова робота\Course_Practice\Repository\bin\Debug\EntityFramework.SqlServer.xml
+B:\C++ проекти\Курсова робота\Course_Practice\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
+B:\C++ проекти\Курсова робота\Course_Practice\Repository\obj\Debug\Repository.csproj.CopyComplete
+B:\C++ проекти\Курсова робота\Course_Practice\Repository\obj\Debug\Repository.dll
+B:\C++ проекти\Курсова робота\Course_Practice\Repository\obj\Debug\Repository.pdb

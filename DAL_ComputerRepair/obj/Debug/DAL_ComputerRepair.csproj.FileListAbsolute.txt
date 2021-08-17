@@ -1,0 +1,11 @@
+B:\C++ проекти\Курсова робота\Course_Practice\DAL_ComputerRepair\bin\Debug\DAL_ComputerRepair.dll
+B:\C++ проекти\Курсова робота\Course_Practice\DAL_ComputerRepair\bin\Debug\DAL_ComputerRepair.pdb
+B:\C++ проекти\Курсова робота\Course_Practice\DAL_ComputerRepair\obj\Debug\DAL_ComputerRepair.csproj.CoreCompileInputs.cache
+B:\C++ проекти\Курсова робота\Course_Practice\DAL_ComputerRepair\obj\Debug\DAL_ComputerRepair.dll
+B:\C++ проекти\Курсова робота\Course_Practice\DAL_ComputerRepair\obj\Debug\DAL_ComputerRepair.pdb
+B:\C++ проекти\Курсова робота\Course_Practice\DAL_ComputerRepair\bin\Debug\DAL_ComputerRepair.dll.config
+B:\C++ проекти\Курсова робота\Course_Practice\DAL_ComputerRepair\bin\Debug\EntityFramework.dll
+B:\C++ проекти\Курсова робота\Course_Practice\DAL_ComputerRepair\bin\Debug\EntityFramework.SqlServer.dll
+B:\C++ проекти\Курсова робота\Course_Practice\DAL_ComputerRepair\bin\Debug\EntityFramework.xml
+B:\C++ проекти\Курсова робота\Course_Practice\DAL_ComputerRepair\bin\Debug\EntityFramework.SqlServer.xml
+B:\C++ проекти\Курсова робота\Course_Practice\DAL_ComputerRepair\obj\Debug\DAL_ComputerRepair.csproj.CopyComplete

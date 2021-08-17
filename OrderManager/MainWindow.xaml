@@ -1,0 +1,60 @@
+﻿<Window x:Class="OrderManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OrderManager"
+        mc:Ignorable="d"
+        Title="Менеджер із замовлень" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0">
+            <MenuItem Header="Замовлення">
+                <MenuItem Name="createOrderMenuItem" Header="Створити замовлення" Click="createOrderMenuItem_Click"></MenuItem>
+                <MenuItem Name="updateOrderMenuItem" Header="Редагувати замовлення" Click="updateOrderMenuItem_Click"></MenuItem>
+                
+                
+            </MenuItem>
+            <MenuItem Header="Клієнт">
+                <MenuItem Name="createClient" Header="Добавити клієнта" Click="createClient_Click"></MenuItem>
+                <MenuItem Name="updateClient" Header="Редагувати клієнта" Click="updateClient_Click"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Пристрій">
+                <MenuItem Name="addDevice" Header="Добавити пристрій" Click="addDevice_Click"></MenuItem>
+                <MenuItem Name="updateDevice" Header="Редагувати пристрій" Click="updateDevice_Click"></MenuItem>
+                
+            </MenuItem>
+            <MenuItem Name="refresh" Header="Оновити таблиці" Click="refresh_Click"></MenuItem>
+        </Menu>
+
+        <TabControl Grid.Row="1">
+            <TabItem Header="Замовлення">
+                <DockPanel  LastChildFill="True">
+                    <DataGrid Name="ordersGrid"></DataGrid>
+                </DockPanel>
+            </TabItem>
+            <TabItem Header="Клієнти">
+                <DockPanel  LastChildFill="True">
+                    <DataGrid Name="clientsGrid"></DataGrid>
+                </DockPanel>
+            </TabItem>
+            <TabItem Header="Деталі">
+                <DockPanel  LastChildFill="True">
+                    <DataGrid Name="detailsGrid"></DataGrid>
+                </DockPanel>
+            </TabItem>
+            <TabItem Header="Пристрої">
+                <DockPanel  LastChildFill="True">
+                    <DataGrid Name="devicesGrid"></DataGrid>
+                </DockPanel>
+            </TabItem>
+        </TabControl>
+
+
+
+
+    </Grid>
+</Window>

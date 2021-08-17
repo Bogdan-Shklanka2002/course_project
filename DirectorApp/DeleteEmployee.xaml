@@ -1,0 +1,83 @@
+﻿<Window x:Class="DirectorApp.DeleteEmployee"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DirectorApp"
+        mc:Ignorable="d"
+        Title="Видалити працівника" Height="266.587" Width="327.606">
+    <StackPanel>
+        <GroupBox Header="Пошук працівника по ІД" BorderBrush="Black" BorderThickness="1.5">
+
+            <Grid x:Name="searchOrderGrid" Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+
+                </Grid.RowDefinitions>
+
+
+                <TextBox Name="searchTextBox" Grid.Row="0" Grid.ColumnSpan="2" FontSize="10" VerticalAlignment="Center" VerticalContentAlignment="Center" 
+                         Width="250" Height="20" Margin="0,5,0,0"></TextBox>
+                <Button Name="searchButton" Grid.Row="2" Grid.ColumnSpan="2"  Content="Пошук" Width="100" Height="20" Margin="0,5,0,0" Click="searchButton_Click"></Button>
+            </Grid>
+        </GroupBox>
+        <StackPanel>
+            <Grid Margin="0,2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Column="0" Content="Ім'я:" />
+                <TextBlock Grid.Column="1" Name="employeeNameTextBlock" Width="120" Height="20" HorizontalAlignment="Center"></TextBlock>
+            </Grid>
+            <Grid Margin="0,2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Column="0" Content="Прізвище:" />
+                <TextBlock Grid.Column="1" Name="employeeSurnameTextBlock" Width="120" Height="20" HorizontalAlignment="Center"></TextBlock>
+            </Grid>
+
+            <Grid Margin="0,2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Column="0" Content="По-батькові:" />
+                <TextBlock Grid.Column="1" Name="employeeFatherNameTextBlock" Width="120" Height="20" HorizontalAlignment="Center"></TextBlock>
+            </Grid>
+            <Grid Margin="0,2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Column="0" Content="Посада:" />
+                <TextBlock Grid.Column="1" Name="employeePositionTextBlock" Width="120" Height="20" HorizontalAlignment="Center"></TextBlock>
+            </Grid>
+
+        </StackPanel>
+        <Button Name="deleteButton" Content="Видалити" Height="24" Width="120" Margin="0,10,0,0" Click="deleteButton_Click"></Button>
+    </StackPanel>
+</Window>

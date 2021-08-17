@@ -1,0 +1,60 @@
+﻿<Window x:Class="WorkmanApp.UpdateDetailOrder"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorkmanApp"
+        mc:Ignorable="d"
+        Title="Редагувати деталь-замовлення" Height="231.398" Width="345.735">
+    <StackPanel>
+        <GroupBox Header="Пошук деталь-замовлення по ІД" BorderBrush="Black" BorderThickness="1.5">
+
+            <Grid x:Name="searchOrderGrid" Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+
+                </Grid.RowDefinitions>
+
+
+                <TextBox Name="searchTextBox" Grid.Row="0" Grid.ColumnSpan="2" FontSize="10" VerticalAlignment="Center" VerticalContentAlignment="Center" 
+                         Width="250" Height="20" Margin="0,5,0,0"></TextBox>
+                <Button Name="searchButton" Grid.Row="2" Grid.ColumnSpan="2"  Content="Пошук" Width="100" Height="20" Margin="0,5,0,0" Click="searchButton_Click"></Button>
+            </Grid>
+        </GroupBox>
+        <StackPanel>
+            <Grid Margin="0,2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Column="0" Content="ІД замовлення:" />
+                <TextBox Grid.Column="1" Name="orderIdTextBox" Width="120" Height="20" HorizontalAlignment="Center"></TextBox>
+            </Grid>
+
+
+            <Grid Margin="0,2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Column="0" Content="Деталь:" />
+                <ComboBox Grid.Column="1" Name="detailComboBox" Width="120" Height="20" HorizontalAlignment="Center"></ComboBox>
+            </Grid>
+
+        </StackPanel>
+        <Button Name="addDetailOrder" Content="Редагувати" Height="24" Width="120" Margin="0,10,0,0" Click="addDetailOrder_Click"></Button>
+    </StackPanel>
+</Window>

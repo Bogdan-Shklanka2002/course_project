@@ -1,0 +1,179 @@
+﻿<Window x:Class="DirectorApp.UpdateOrder"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DirectorApp"
+        mc:Ignorable="d"
+        Title="Редагувати замовлення" Height="503.2" Width="656.8">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="86*"/>
+            <RowDefinition Height="293*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+
+        <GroupBox Header="Пошук замовлення по ІД" BorderBrush="Black" BorderThickness="1.5">
+
+            <Grid x:Name="searchOrderGrid" Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+
+                </Grid.RowDefinitions>
+
+
+                <TextBox Name="searchTextBox" Grid.Row="0" Grid.ColumnSpan="2" FontSize="10" VerticalAlignment="Center" VerticalContentAlignment="Center" 
+                         Width="250" Height="20" Margin="0,5,0,0"></TextBox>
+                <Button Name="searchButton" Grid.Row="2" Grid.ColumnSpan="2"  Content="Пошук" Width="100" Height="20" Margin="0,5,0,0" Click="searchButton_Click"></Button>
+            </Grid>
+        </GroupBox>
+        <StackPanel Grid.Row="1">
+            <Grid Margin="0,2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Column="0" Content="Виберіть пристрій:" />
+                <ComboBox Grid.Column="1" Name="deviceComboBox" Width="120" Height="20" HorizontalAlignment="Left"></ComboBox>
+            </Grid>
+            <Grid Margin="0,2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Column="0" Content="Виберіть статус замов-ня:" />
+                <ComboBox Grid.Column="1"  Name="statusComboBox" Width="120" Height="20" HorizontalAlignment="Left" />
+
+            </Grid>
+            <Grid Margin="0,2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Column="0" Content="Дата замовлення:" />
+                <DatePicker Name="dateOrder" Grid.Column="1" Width="120"  Height="25" HorizontalAlignment="Left" ></DatePicker>
+
+
+
+            </Grid>
+            <Grid Margin="0,2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Column="0" Content="Тип замовлення:" />
+                <ComboBox Name="typeOrderComboBox" Grid.Column="1" Width="120" Height="20" HorizontalAlignment="Left"></ComboBox>
+
+            </Grid>
+            <Grid Margin="0,2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Column="0" Content="Майстер:" />
+                <ComboBox Name="workmanComboBox" Grid.Column="1" Width="120" Height="20" HorizontalAlignment="Left"></ComboBox>
+
+            </Grid>
+            <GroupBox Header="Клієнт" BorderBrush="Black" BorderThickness="1.5">
+                <StackPanel>
+                    <Grid Margin="0,2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Column="0" Content="Ім'я:" />
+                        <TextBox Grid.Column="1" Name="clientNameTextBox" Width="120" Height="20" HorizontalAlignment="Left"></TextBox>
+                    </Grid>
+                    <Grid Margin="0,2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Column="0" Content="Прізвище:" />
+                        <TextBox Grid.Column="1" Name="clientSurnameTextBox" Width="120" Height="20" HorizontalAlignment="Left"></TextBox>
+                    </Grid>
+
+                    <Grid Margin="0,2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Column="0" Content="По-батькові:" />
+                        <TextBox Grid.Column="1" Name="clientFatherNameTextBox" Width="120" Height="20" HorizontalAlignment="Left"></TextBox>
+                    </Grid>
+                    <Grid Margin="0,2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Column="0" Content="Номер телефону:" />
+                        <TextBox Grid.Column="1" Name="clientPhoneNumberTextBox" Width="120" Height="20" HorizontalAlignment="Left"></TextBox>
+                    </Grid>
+                    <Grid Margin="0,2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Column="0" Content="Адреса:" />
+                        <TextBox Grid.Column="1" Name="clientAddressTextBox" Width="120" Height="20" HorizontalAlignment="Left"></TextBox>
+                    </Grid>
+                </StackPanel>
+            </GroupBox>
+        </StackPanel>
+        <GroupBox Grid.Column="1" Grid.RowSpan="2" Header="Опис" BorderBrush="Black" BorderThickness="1.5" Margin="0.2,0,-0.4,0.4">
+            <TextBox Name="descriptionTextBox" UndoLimit="900" TextWrapping="Wrap" AcceptsReturn="True"></TextBox>
+        </GroupBox>
+        <Button Name="updateButton" Grid.Row="2" Grid.ColumnSpan="2" Content="Редагувати" Width="100" Height="25" Click="updateButton_Click"/>
+
+    </Grid>
+
+</Window>

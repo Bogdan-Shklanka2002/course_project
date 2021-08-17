@@ -1,0 +1,20 @@
+﻿DirectorApp
+
+
+winexe
+C#
+.cs
+B:\C++ проекти\Курсова робота\Course_Practice\DirectorApp\obj\Debug\
+DirectorApp
+none
+false
+DEBUG;TRACE
+B:\C++ проекти\Курсова робота\Course_Practice\DirectorApp\App.xaml
+16748204501
+
+231157242121
+21688666662
+AddDetail.xaml;CreateClient.xaml;CreateDevice.xaml;CreateEmployee.xaml;CreateOrder.xaml;DeleteClient.xaml;DeleteDetail.xaml;DeleteDevice.xaml;DeleteEmployee.xaml;DeleteOrder.xaml;MainWindow.xaml;UpdateClient.xaml;UpdateDetail.xaml;UpdateDevice.xaml;UpdateEmployee.xaml;UpdateOrder.xaml;
+
+True
+
